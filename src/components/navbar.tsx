@@ -1,3 +1,4 @@
+
 // import React from 'react';
 // import { createContext, useState, useContext } from 'react';
 
@@ -192,6 +193,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -202,12 +204,12 @@ const Navbar = () => {
           My Next.js App
         </Typography>
         <ul style={{ listStyle: 'none', display: 'flex', gap: '20px' }}>
-          <li>
+          <Button>
             <Link href="/">
               Home
             </Link>
-          </li>
-          <li>
+          </Button>
+          <li color='primary'>
             <Link href="/about">
               About
             </Link>

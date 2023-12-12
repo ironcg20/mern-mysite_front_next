@@ -1,7 +1,4 @@
 import Image from 'next/image'
-// import Layout from "./app/layout"
-// import { useClient } from 'next/client';
-// import { useClient } from 'next/client';
 import DataTable from './components/dataTable'
 
 export default function Home() {

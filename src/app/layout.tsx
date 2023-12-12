@@ -24,15 +24,15 @@
 import Navbar from "../components/navbar"
 // import TodoShow from "../components/todoShow"
 // import { useClient } from 'next/client';
+// import DataTable from '../components/dataTable'
 
 export default function Layout() {
-
-  // useClient();s
   return (
     <>
       <Navbar />
       <main>
-        {/* <TodoShow /> */}
+        {/* <div>ddd</div> */}
+        {/* <DataTable /> */}
       </main>
     </>
   )

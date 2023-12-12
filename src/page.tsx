@@ -1,7 +1,11 @@
 import Image from 'next/image'
 // import Layout from "./app/layout"
+// import { useClient } from 'next/client';
+// import { useClient } from 'next/client';
+import DataTable from './components/dataTable'
 
 export default function Home() {
+  // useClient();
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -110,8 +114,11 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-    <div>
-      Home
-    </div>
+    // <div>
+    //   Home
+    // </div>
+    <main>
+      <DataTable />
+    </main>
   )
 }

@@ -20,21 +20,20 @@
 //     </html>
 //   )
 // }
+
 import Navbar from "../components/navbar"
-// export default function Layout({children}) {
-//   return (
-//     <>
-//     <Navbar/>
-//     <main>{children}</main>
-//     </>
-//   )
-// }
+// import TodoShow from "../components/todoShow"
+// import { useClient } from 'next/client';
 
 export default function Layout() {
+
+  // useClient();s
   return (
     <>
-    <Navbar/>
-    <main>Main</main>
+      <Navbar />
+      <main>
+        {/* <TodoShow /> */}
+      </main>
     </>
   )
 }

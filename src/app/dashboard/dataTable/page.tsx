@@ -1,5 +1,7 @@
+
 import * as React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { Typography } from '@mui/material';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 70 },
@@ -20,6 +22,15 @@ const columns: GridColDef[] = [
         valueGetter: (params: GridValueGetterParams) =>
             `${params.row.firstName || ''} ${params.row.lastName || ''}`,
     },
+    // {
+    //     field: 'action',
+    //     headerName: 'Action',
+    //     description: 'This column has a value getter and is not sortable.',
+    //     sortable: false,
+    //     width: 160,
+    //     valueGetter: (params: GridValueGetterParams) =>
+    //         `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+    // },
 ];
 
 const rows = [
@@ -36,22 +47,19 @@ const rows = [
 
 export default function DataTable() {
     return (
-        <>
-            {/* <h1>ddd</h1> */}
-            <div style={{ height: 400, width: '100%' }}>
-                <DataGrid
-                    rows={rows}
-                    columns={columns}
-                    initialState={{
-                        pagination: {
-                            paginationModel: { page: 0, pageSize: 5 },
-                        },
-                    }}
-                    pageSizeOptions={[5, 10]}
-                    checkboxSelection
-                />
-            </div>
-        </>
-
+        <div style={{ height: 400, width: '100%' }}>
+            <Typography>Todo View</Typography>
+            <DataGrid
+                rows={rows}
+                columns={columns}
+                initialState={{
+                    pagination: {
+                        paginationModel: { page: 0, pageSize: 5 },
+                    },
+                }}
+                pageSizeOptions={[5, 10]}
+                checkboxSelection
+            />
+        </div>
     );
 }
